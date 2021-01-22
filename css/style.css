@@ -1,0 +1,205 @@
+
+@media screen and /* (min-width:200px) and  */(max-width:700px){
+    input::placeholder{
+        color: #ffffffda;
+    }
+body{
+    background: rgb(246, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #ffffff;
+  
+font-family: 'Poppins', sans-serif;
+animation-name:titulo;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+}
+@keyframes titulo {
+    from{
+        transform: rotate(2deg);
+
+    }
+    to{
+        transform: rotate(-2deg);
+
+    }
+}
+.seccion__login{
+  
+    background: #2A3132;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.seccion-login__div{
+    text-align: center;
+}
+.contenedor{
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #90AFC5;
+    background: #366B87;
+    border-radius: 2px;
+    width: 70%;
+    height: 25px;
+    color: #ffffff;
+    padding: 3px;
+    font-size: 15px;
+   
+}
+input[type=email],input[type=password]{
+    border: none;
+    border-bottom: 2px solid #90AFC5;
+  }
+  input[type=email]:focus,input[type=password]:focus {
+    background-color: lightblue;
+  }
+.tamaño{
+display: inline-block;
+justify-content: center;
+margin: 5px;
+}
+.boton{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #90AFC5;
+    background: #366B87;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.boton:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.parrafo{
+    display: inline-block;
+    font-size: 10px;
+    margin: 3px;
+}
+p a{
+    
+    color: #ffffff;
+}
+
+}
+@media screen and (min-width:701px){
+    input::placeholder{
+        color: #ffffffda;
+    }
+    body{
+        background: rgb(246, 242, 242);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        color: #ffffff;
+        font-size: 50px;
+      
+    font-family: 'Poppins', sans-serif;
+    animation-name:titulo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    margin: 15px;
+    
+    }
+    @keyframes titulo {
+        from{
+            transform: rotate(2deg);
+    
+        }
+        to{
+            transform: rotate(-2deg);
+    
+        }
+    }
+    .seccion__login{
+        font-family: 'Lora', serif;
+        max-width: 500px;
+        background: #2A3132;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .seccion-login__div{
+        text-align: center;
+    }
+    .contenedor{
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin: 5px;
+        border: 1px solid #90AFC5;
+        background: #366B87;
+        border-radius: 2px;
+        width: 70%;
+        height: 30px;
+        color: #ffffff;
+        padding: 5px;
+        font-size: 15px;
+
+       
+    }
+    input[type=email],input[type=password]{
+        border: none;
+        border-bottom: 2px solid #90AFC5;
+    
+      }
+      input[type=email]:focus,input[type=password]:focus {
+        background-color: rgb(110, 177, 199);
+        width: 71%;
+        height: 35px;
+      }
+    .tamaño{
+    display: inline-block;
+    justify-content: center;
+    margin: 5px;
+    }
+    .boton{
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        border: 1px solid #90AFC5;
+        background: #366B87;
+        color: #ffffff;
+        border-radius: 2px;
+        font-family: 'Lora', serif;
+    }
+    .boton:hover{
+        background-color: rgb(110, 177, 199);
+        cursor: pointer;
+    }
+    .parrafo{
+        display: inline-block;
+        font-size: 15px;
+        margin: 5px;
+    }
+    .parrafo:hover{
+        font-size: 16px;
+        margin: 6px;
+       
+    }
+    p a{
+        
+        color: #ffffff;
+    }
+    a:hover{
+        color: rgb(157, 20, 220);
+    }
+
+}
