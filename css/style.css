@@ -1,16 +1,8 @@
-
+/* Estilo para movil */
 @media screen and /* (min-width:200px) and  */(max-width:700px){
-    input::placeholder{
-        color: #ffffffda;
-    }
-body{
-    background: rgb(246, 242, 242);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
+ 
+/* Estilo de h1 */
+.h1{
     color: #ffffff;
   
 font-family: 'Poppins', sans-serif;
@@ -21,6 +13,7 @@ animation-direction: alternate;
 animation-timing-function: ease-in-out;
 
 }
+/* animacion del h1 */
 @keyframes titulo {
     from{
         transform: rotate(2deg);
@@ -31,6 +24,7 @@ animation-timing-function: ease-in-out;
 
     }
 }
+/* Contenedor del login */
 .seccion__login{
   
     background: #2A3132;
@@ -40,9 +34,11 @@ animation-timing-function: ease-in-out;
     align-items: center;
     
 }
+/* contenido del login */
 .seccion-login__div{
     text-align: center;
 }
+/*  Contenedor de input de correo y contraseña */
 .contenedor{
     font-family: 'Lora', serif;
     text-align: center;
@@ -52,11 +48,11 @@ animation-timing-function: ease-in-out;
     border-radius: 2px;
     width: 70%;
     height: 25px;
-    color: #ffffff;
     padding: 3px;
     font-size: 15px;
    
 }
+/* Animaciones al darle click dentro del input */
 input[type=email],input[type=password]{
     border: none;
     border-bottom: 2px solid #90AFC5;
@@ -64,11 +60,16 @@ input[type=email],input[type=password]{
   input[type=email]:focus,input[type=password]:focus {
     background-color: lightblue;
   }
-.tamaño{
+  input::placeholder{
+    color: #f8f8f886;
+}
+  /* Estilo del captcha */
+.captcha{
 display: inline-block;
 justify-content: center;
 margin: 5px;
 }
+/* Boton de ingresar */
 .boton{
     width: 100px;
     height: 30px;
@@ -78,33 +79,44 @@ margin: 5px;
     color: #ffffff;
     border-radius: 2px;
 }
+/* Cambio del color cuando pasa el mouse */
 .boton:hover{
     background-color: lightblue;
     cursor: pointer;
 }
+/* ESTILOS DEL TEXTO DEBAJO DEL BOTON DE INGRESAR */
 .parrafo{
     display: inline-block;
     font-size: 10px;
     margin: 3px;
 }
+.parrafo:hover{
+    font-size: 12px;
+    margin: 4px;
+   
+}
+/* COLOR DE LETRA DEL HIPERVICULO */
 p a{
     
     color: #ffffff;
 }
+a:hover{
+    color: rgb(157, 20, 220);
+}
 
 }
+
+/* MEDIDAS PARA PC */
 @media screen and (min-width:701px){
-    input::placeholder{
-        color: #ffffffda;
-    }
+  /* CENTRADDO DEL CONTENIDO DEL BODY */
     body{
         background: rgb(246, 242, 242);
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    h1{
+    /* COLOR DE LOS H1 */
+    .h1{
         color: #ffffff;
         font-size: 50px;
       
@@ -117,6 +129,7 @@ p a{
     margin: 15px;
     
     }
+/* animacion del h1 */
     @keyframes titulo {
         from{
             transform: rotate(2deg);
@@ -127,6 +140,7 @@ p a{
     
         }
     }
+    /* seccion del login */
     .seccion__login{
         font-family: 'Lora', serif;
         max-width: 500px;
@@ -137,9 +151,11 @@ p a{
         align-items: center;
         
     }
+    /* contenedor del contenido */
     .seccion-login__div{
         text-align: center;
     }
+    /* estilos del input de correo y contraseña */
     .contenedor{
         font-family: 'Lora', serif;
         text-align: center;
@@ -155,6 +171,7 @@ p a{
 
        
     }
+    /* animaciones al darle clicka los input */
     input[type=email],input[type=password]{
         border: none;
         border-bottom: 2px solid #90AFC5;
@@ -165,11 +182,16 @@ p a{
         width: 71%;
         height: 35px;
       }
-    .tamaño{
+      input::placeholder{
+        color: #ffffffda;
+    }
+    /* estilos del captcha */
+    .captcha{
     display: inline-block;
     justify-content: center;
     margin: 5px;
     }
+    /* estilos del boton de ingresar */
     .boton{
         width: 100px;
         height: 30px;
@@ -184,6 +206,7 @@ p a{
         background-color: rgb(110, 177, 199);
         cursor: pointer;
     }
+    /* estilos del texto debajo del boton */
     .parrafo{
         display: inline-block;
         font-size: 15px;
