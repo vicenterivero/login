@@ -2,6 +2,18 @@ body {
     background-color: #eee;
 }
 
+
+/* estilos de la caja padre */
+
+.contenido-contra {
+    background-color: #2A3132;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
 .titulo {
     font-family: 'Martel', serif;
     font-size: 1.5rem;
@@ -10,14 +22,8 @@ body {
     color: white;
 }
 
-.contenido-contra {
-    background-color: #2A3132;
-    max-width: 300px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 15px;
-    padding-bottom: 30px;
-}
+
+/* sección que engloba el ícono y el texto  */
 
 .candado {
     display: flex;
@@ -41,6 +47,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+/* formulario */
 
 .formulario fieldset {
     border: none;
@@ -73,6 +82,9 @@ body {
     color: white;
     background-color: #90AFC5;
 }
+
+
+/* links */
 
 .navegacion {
     display: flex;
