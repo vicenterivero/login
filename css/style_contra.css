@@ -4,7 +4,14 @@ body {
 
 
 /* estilos de la caja padre */
-
+.captcha{
+    display: inline-block;
+    justify-content: center;
+    margin: 5px;
+    position: relative;
+    left: -20px;
+    }   
+    
 .contenido-contra {
     background-color: #2A3132;
     max-width: 300px;
@@ -12,6 +19,7 @@ body {
     margin-top: 80px;
     padding: 15px;
     padding-bottom: 30px;
+    border-radius: 10px;
 }
 
 .titulo {
@@ -64,7 +72,11 @@ body {
     text-align: center;
 }
 
-
+.izquierda{
+    width: 90%;
+    position: relative;
+    left: -10px;
+}
 /* tu botoncito */
 
 .botoncito {
@@ -103,4 +115,24 @@ body {
     padding: .5rem;
     margin: 0 auto;
     margin-top: 10px;
+    position: relative;
+    left: -15px;
+}
+.animacion{
+    animation-name:titulo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;  
+}
+/* animacion del h1 */
+@keyframes titulo {
+    from{
+        transform: rotate(4deg);
+
+    }
+    to{
+        transform: rotate(-4deg);
+
+    }
 }

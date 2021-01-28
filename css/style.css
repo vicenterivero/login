@@ -13,6 +13,13 @@ animation-direction: alternate;
 animation-timing-function: ease-in-out;
 
 }
+.animacion{
+    animation-name:titulo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;  
+}
 /* animacion del h1 */
 @keyframes titulo {
     from{
@@ -105,7 +112,9 @@ a:hover{
 }
 
 }
-
+.padre{
+    padding: 5px;
+}
 /* MEDIDAS PARA PC */
 @media screen and (min-width:701px){
   /* CENTRADDO DEL CONTENIDO DEL BODY */
@@ -225,4 +234,4 @@ a:hover{
         color: rgb(157, 20, 220);
     }
 
-}
+}   
