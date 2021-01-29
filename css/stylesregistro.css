@@ -1,0 +1,183 @@
+/* Aqui defini el color del fondo de todo el html */
+
+:root {
+    --colorPuto: #373737;
+}
+
+*,
+
+/* aqui selecciono todo (ver selector css) */
+
+::before,
+
+/* before sirve para meter css a todo lo que esta antes de lo seleccionado */
+
+::after {
+    /* after sirve para meter css a todo lo que esta despues de lo seleccionado */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    float: left;
+    /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #64b5f6;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+body {
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, white, white);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, white, white);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 5px 0 #62757f;
+    border-radius: 3px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 40px;
+}
+
+input {
+    background: none;
+    font-size: 14px;
+    padding: 8px 8px 8px 4px;
+    border: none;
+    border-bottom: 1px solid var(--colorPuto);
+    display: block;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    color: #707070;
+}
+
+label {
+    color: var(--colorPuto);
+    font-size: 14px;
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    transition: 0.2s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -16px;
+    font-size: 12px;
+    color: #64b5f6;
+}
+
+.barraxd {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barraxd::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #9be7ff, #64b5f6);
+    transition: 0.2s ease width;
+    left: 0;
+}
+
+input:focus~.barraxd::before {
+    width: 100%;
+}
+
+#boton {
+    color: white;
+}
+
+button {
+    background: #64b5f6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 2 0 #707070;
+}
+
+button:hover {
+    width: 80%;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.captcha {
+    display: inline-block;
+    justify-content: center;
+    margin: 15px;
+    position: relative;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}

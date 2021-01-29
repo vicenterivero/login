@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesregistro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Joath</a></li>
+                <li><a href="#">Vicente</a></li>
+                <li><a href="#">Raul</a></li>
+                <li><a href="#">Viviana</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" id="form" method="POST">
+        <div class="form">
+            <h1>¡Registrate!</h1>
+            <div class="grupo">
+                <input type="text" id="nombre" required><span class="barraxd"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" id="mail" required><span class="barraxd"></span>
+                <label for="">Correo electronico</label>
+            </div>
+            <div class="grupo">
+                <input type="password" id="pass" required><span class="barraxd"></span>
+                <label for="">Contraseña</label>
+            </div>
+            <p>Comprueba que no eres un robot.</p>
+
+            <div class="g-recaptcha captcha" data-theme="dark" data-sitekey="6LfhNjcaAAAAAMUksAZX6RNcvB_RkWFzJ-_7FZXC"></div>
+
+            <button type="submit" id="boton">Registrarse</button>
+        </div>
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+
+</body>
+
+</html>
